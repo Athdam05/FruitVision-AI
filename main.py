@@ -1,5 +1,15 @@
 import streamlit as st
-import cv2
+import os
+
+try:
+    import cv2
+except ImportError:
+    # Streamlit Cloud OpenCV GUI Dependency Fixer
+    st.warning("First-time setup: Optimizing OpenCV for Streamlit Cloud... This will take a few seconds, please wait.")
+    os.system("pip uninstall -y opencv-python opencv-python-headless")
+    os.system("pip install opencv-python-headless")
+    import cv2
+
 import numpy as np
 from detection import FruitDetector
 from utils import FPSCounter, generate_csv_report
