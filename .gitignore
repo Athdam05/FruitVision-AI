@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.env
+.venv
+env/
+venv/
+outputs/
+*.mp4
+*.avi
+*.csv
+.DS_Store

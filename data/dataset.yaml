@@ -1,0 +1,15 @@
+# Dataset configuration placeholder for YOLOv8
+path: ../Fruits-detection  # dataset root dir (Assume exists if running)
+train: train/images  # train images path
+val: valid/images  # val images path
+test: test/images # test images path (optional)
+
+# Classes
+names:
+  0: Apple
+  1: Banana
+  2: Orange
+  3: Pineapple
+  4: Strawberry
+  5: Watermelon
+  # ... Add more classes corresponding to the actual dataset
